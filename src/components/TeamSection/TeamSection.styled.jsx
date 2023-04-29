@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const CasesSectionStyled = styled.section`
-  padding-top: 56px;
-  padding-bottom: 40px;
+export const TeamSectionStyled = styled.section`
+  padding-top: 72px;
+  padding-bottom: 50px;
 
   color: #333333;
   background: #ffff;
@@ -15,7 +15,3 @@ export const CasesSectionStyled = styled.section`
     padding-bottom: 80px;
   }
 `;
-
-// export const GalleryWrapper = styled.ul`
-//   display: grid;
-// `;

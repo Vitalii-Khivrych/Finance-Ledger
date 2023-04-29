@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const Svg = styled.svg`
+  fill: currentColor;
+
   &.icon-logo {
     width: 39.31px;
     height: 35px;
 
     margin-right: 8px;
-
-    fill: currentColor;
 
     @media screen and (min-width: 768px) {
       margin-right: 9.69px;
@@ -22,7 +22,15 @@ export const Svg = styled.svg`
     height: 18px;
 
     margin-right: 8px;
+  }
 
-    fill: currentColor;
+  &.icon-youtube {
+    width: 40px;
+    height: 35px;
+  }
+
+  &.icon-linkedin {
+    width: 31px;
+    height: 35px;
   }
 `;

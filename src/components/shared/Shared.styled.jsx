@@ -107,3 +107,14 @@ export const CasesText = styled(Text)`
     margin-bottom: 36px;
   }
 `;
+
+export const TeamText = styled(Text)`
+  margin-bottom: 63px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1360px) {
+    margin-bottom: 30px;
+  }
+`;
