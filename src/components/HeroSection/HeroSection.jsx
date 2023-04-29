@@ -27,7 +27,7 @@ export const HeroSection = () => {
             srcSet={`${heroImage} 1x, ${heroImageRetina} 2x`}
             type="image/jpeg"
           />
-          <img src={heroImage} alt="background city" />
+          <img src={heroImage} alt="background city" loading="lazy" />
         </BackgroundImage>
 
         <HiddenTitle>Finance Ledger</HiddenTitle>

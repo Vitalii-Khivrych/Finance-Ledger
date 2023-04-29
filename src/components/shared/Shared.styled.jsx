@@ -10,10 +10,6 @@ export const Container = styled.div`
   padding: 0 20px;
   margin: 0 auto;
 
-  @media screen and (min-width: 320px) {
-    /* width: 320px; */
-  }
-
   @media screen and (min-width: 768px) {
     /* width: 768px; */
     padding: 0 32px;
@@ -51,6 +47,8 @@ export const PreTitle = styled.p`
   font-size: 16px;
   line-height: calc(22 / 16);
 
+  text-align: ${p => (p.center ? 'center' : 'none')};
+
   margin-bottom: 16px;
 
   /* color: ${p => p.color || '#ffffff'}; */
@@ -64,12 +62,20 @@ export const PreTitle = styled.p`
 export const Title = styled.h2`
   font-size: 32px;
   line-height: calc(44 / 32);
+  font-weight: 400;
 
   margin-bottom: 24px;
+
+  text-align: ${p => (p.center ? 'center' : 'none')};
 
   /* color: #ffffff; */
 
   @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: calc(${p => p.lh || '48'} / 40);
+  }
+
+  @media screen and (min-width: 1360px) {
     font-size: 40px;
     line-height: calc(48 / 40);
   }
@@ -79,12 +85,25 @@ export const Text = styled.p`
   font-size: 16px;
   line-height: calc(22 / 16);
 
-  margin-bottom: 24px;
+  text-align: ${p => (p.center ? 'center' : 'none')};
+
+  margin-bottom: ${p => p.mb || '24px'};
 
   /* color: #ffffff; */
 
   @media screen and (min-width: 768px) {
     font-size: 18px;
     line-height: calc(25 / 18);
+  }
+`;
+
+export const CasesText = styled(Text)`
+  margin-bottom: 31px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1360px) {
+    margin-bottom: 36px;
   }
 `;

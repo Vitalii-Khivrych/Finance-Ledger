@@ -7,7 +7,7 @@ export const NavList = styled.ul`
 
 export const NavItem = styled.li`
   font-size: 16px;
-  line-height: calc(22px / 16px);
+  line-height: calc(22 / 16);
 
   &:not(:last-of-type) {
     margin-right: 12px;

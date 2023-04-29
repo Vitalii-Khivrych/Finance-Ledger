@@ -8,14 +8,11 @@ export const ButtonInverseStyled = styled.button`
   font-size: 18px;
   line-height: calc(25 / 18);
 
-  height: 57px;
+  height: 54px;
   width: ${p => p.width || '175px'};
 
-  margin-right: auto;
-  margin-left: ${p => p.ml || 'auto'};
-
   color: white;
-  background-color: #28a745;
+  background-color: inherit;
 
   border: 1px solid #ffffff;
   border-radius: 5px;
@@ -26,6 +23,12 @@ export const ButtonInverseStyled = styled.button`
 
   &:hover,
   &:focus {
-    background-color: #2ebf4f;
+    background-color: white;
+    border-color: transparent;
+    color: ${p => (p.blue ? '#0284D0' : '#28A745')};
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 57px;
   }
 `;

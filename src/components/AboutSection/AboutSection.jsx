@@ -1,16 +1,11 @@
 import React from 'react';
 
-import {
-  ButtonInverseHover,
-  Container,
-  PreTitle,
-  Title,
-  Text,
-} from 'components';
+import { ButtonInverseHover, PreTitle, Title, Text } from 'components';
 import {
   AboutSectionStyled,
   Wrapper,
   AboutImage,
+  AboutContainer,
   TextWrapper,
 } from './AboutSection.styled';
 
@@ -21,7 +16,7 @@ import aboutImageWebpRetina from 'images/home/people@2x.webp';
 
 export const AboutSection = () => {
   return (
-    <AboutSectionStyled>
+    <AboutSectionStyled id="about">
       <Wrapper>
         <AboutImage>
           <source
@@ -34,9 +29,9 @@ export const AboutSection = () => {
               ${aboutImageRetina} 2x`}
             type="image/jpeg"
           />
-          <img src={aboutImage} alt="people" />
+          <img src={aboutImage} alt="people" loading="lazy" />
         </AboutImage>
-        <Container>
+        <AboutContainer>
           <TextWrapper>
             <PreTitle>What you are looking for</PreTitle>
             <Title>We provide bespoke solutions</Title>
@@ -50,7 +45,7 @@ export const AboutSection = () => {
               Read More
             </ButtonInverseHover>
           </TextWrapper>
-        </Container>
+        </AboutContainer>
       </Wrapper>
     </AboutSectionStyled>
   );
