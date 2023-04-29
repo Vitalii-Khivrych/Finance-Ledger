@@ -1,9 +1,10 @@
-import { Layout } from 'components';
+import { AboutSection, HeroSection, Layout } from 'components';
 
 function App() {
   return (
     <Layout>
-      <div>ddsdsds</div>
+      <HeroSection />
+      <AboutSection />
     </Layout>
   );
 }

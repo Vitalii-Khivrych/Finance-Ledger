@@ -19,6 +19,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+header {
+  z-index: 1;
+}
+
 h1,
 h2,
 h3,
@@ -45,6 +49,11 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
 }
 
 code {

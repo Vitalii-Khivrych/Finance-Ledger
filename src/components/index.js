@@ -4,3 +4,8 @@ export * from './Layout/Layout';
 export * from './Logo/Logo';
 export * from './Navigation/Navigation';
 export * from './SvgIcon/SvgIcon';
+export * from './shared/Shared.styled';
+export * from './HeroSection/HeroSection';
+export * from './AboutSection/AboutSection';
+export * from './Button/Button';
+export * from './ButtonInverseHover/ButtonInverseHover';

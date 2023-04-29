@@ -1,9 +1,6 @@
-// import { Suspense } from 'react';
-// import { Outlet } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import { Header, Footer } from 'components';
-// import { Header } from './Layout.styled';
 
 export const Layout = ({ children }) => {
   return (
@@ -15,4 +12,6 @@ export const Layout = ({ children }) => {
   );
 };
 
-Layout.propTypes = { children: PropTypes.element.isRequired };
+Layout.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.element.isRequired),
+};

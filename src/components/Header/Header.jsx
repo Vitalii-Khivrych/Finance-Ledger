@@ -1,13 +1,15 @@
 import React from 'react';
 
-import { Logo, Navigation } from 'components';
+import { Logo, Navigation, HeaderContainer } from 'components';
 import { HeaderStyled } from './Header.styled';
 
 export const Header = () => {
   return (
     <HeaderStyled>
-      <Logo />
-      <Navigation />
+      <HeaderContainer>
+        <Logo />
+        <Navigation />
+      </HeaderContainer>
     </HeaderStyled>
   );
 };
