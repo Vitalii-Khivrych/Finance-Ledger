@@ -65,7 +65,12 @@ export const ContactForm = () => {
   // };
 
   return (
-    <Form name="contact" method="post" onSubmit={handleSubmit(onSubmit)}>
+    <Form
+      name="contact"
+      method="post"
+      data-netlify="true"
+      onSubmit={handleSubmit(onSubmit)}
+    >
       <input type="hidden" name="form-name" value="contact" />
 
       <Wrapper>
