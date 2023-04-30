@@ -41,7 +41,7 @@ export const PersonPosition = styled.p`
 
   @media screen and (min-width: 768px) {
     font-size: 18px;
-    line-height: calc(28 / 18);
+    line-height: calc(25 / 18);
   }
 `;
 

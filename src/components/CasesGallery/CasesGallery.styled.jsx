@@ -19,6 +19,11 @@ export const GalleryItem = styled.li`
     margin-bottom: 8px;
   }
 
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
   @media screen and (min-width: 768px) {
     &:not(:last-of-type) {
       margin-bottom: 0px;

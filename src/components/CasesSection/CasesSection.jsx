@@ -2,7 +2,7 @@ import React from 'react';
 
 import {
   Container,
-  PreTitle,
+  CasesPreTitle,
   Title,
   CasesText,
   CasesGallery,
@@ -13,7 +13,7 @@ export const CasesSection = () => {
   return (
     <CasesSectionStyled id="cases">
       <Container>
-        <PreTitle center>This is what we do</PreTitle>
+        <CasesPreTitle center>This is what we do</CasesPreTitle>
         <Title center lh="54">
           Business Cases
         </Title>

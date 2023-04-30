@@ -1,14 +1,20 @@
 import React from 'react';
 
-import { Container, PreTitle, Title, TeamText, TeamGallery } from 'components';
+import {
+  Container,
+  TeamTitle,
+  TeamText,
+  TeamGallery,
+  TeamPreTitle,
+} from 'components';
 import { TeamSectionStyled } from './TeamSection.styled';
 
 export const TeamSection = () => {
   return (
     <TeamSectionStyled>
       <Container>
-        <PreTitle center>Who we are</PreTitle>
-        <Title center>Our Professional Team</Title>
+        <TeamPreTitle center>Who we are</TeamPreTitle>
+        <TeamTitle center>Our Professional Team</TeamTitle>
         <TeamText center>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
           sapiente!

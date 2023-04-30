@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const ButtonInverseStyled = styled.button`
   display: flex;
@@ -29,6 +29,21 @@ export const ButtonInverseStyled = styled.button`
   }
 
   @media screen and (min-width: 768px) {
+    width: 156px;
     height: 57px;
   }
+
+  ${p => {
+    if (p.post) {
+      return css`
+        width: 172px;
+        @media screen and (min-width: 768px) {
+          width: 185px;
+        }
+        @media screen and (min-width: 1360px) {
+          width: 186px;
+        }
+      `;
+    }
+  }}
 `;

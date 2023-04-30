@@ -8,10 +8,11 @@ export const TeamSectionStyled = styled.section`
   background: #ffff;
 
   @media screen and (min-width: 768px) {
-    padding-top: 48px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
   @media screen and (min-width: 1360px) {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 88px;
   }
 `;

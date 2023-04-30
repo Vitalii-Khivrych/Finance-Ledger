@@ -15,6 +15,12 @@ export const HeaderStyled = styled.header`
   padding-top: 22px;
   padding-bottom: 22px;
 
+  &.fixed {
+    position: fixed;
+    background-color: #333333;
+    opacity: 0.8;
+  }
+
   @media screen and (min-width: 768px) {
     height: 70px;
 

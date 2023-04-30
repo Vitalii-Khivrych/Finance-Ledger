@@ -34,14 +34,14 @@ export const BlogsSection = () => {
         <BlogContainer>
           <TextWrapper>
             <PreTitle>April 16 2020</PreTitle>
-            <Title>Blog Post One</Title>
+            <Title lh="54">Blog Post One</Title>
             <Text>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Voluptate, ipsum dignissimos quae laudantium asperiores nam
               aliquid impedit harum illum dolore explicabo ab dolores itaque
               rerum temporibus doloribus iste maiores deleniti?
             </Text>
-            <ButtonInverseHover blue width="172px">
+            <ButtonInverseHover blue post>
               Read Our Blog
             </ButtonInverseHover>
           </TextWrapper>

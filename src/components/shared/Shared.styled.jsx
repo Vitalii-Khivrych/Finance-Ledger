@@ -51,11 +51,25 @@ export const PreTitle = styled.p`
 
   margin-bottom: 16px;
 
-  /* color: ${p => p.color || '#ffffff'}; */
-
   @media screen and (min-width: 768px) {
     font-size: 18px;
     line-height: calc(25 / 18);
+  }
+`;
+
+export const CasesPreTitle = styled(PreTitle)`
+  @media screen and (min-width: 1360px) {
+    line-height: calc(33 / 18);
+  }
+`;
+
+export const TeamPreTitle = styled(PreTitle)`
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: calc(33 / 20);
+  }
+  @media screen and (min-width: 1360px) {
+    line-height: calc(27 / 20);
   }
 `;
 
@@ -68,8 +82,6 @@ export const Title = styled.h2`
 
   text-align: ${p => (p.center ? 'center' : 'none')};
 
-  /* color: #ffffff; */
-
   @media screen and (min-width: 768px) {
     font-size: 40px;
     line-height: calc(${p => p.lh || '48'} / 40);
@@ -81,6 +93,30 @@ export const Title = styled.h2`
   }
 `;
 
+export const TeamTitle = styled(Title)`
+  @media screen and (min-width: 768px) {
+    line-height: calc(54 / 40);
+  }
+  @media screen and (min-width: 1360px) {
+    margin-bottom: 30px;
+  }
+`;
+
+export const ContactTitle = styled(Title)`
+  margin-bottom: 69px;
+
+  line-height: calc(48 / 32);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+    line-height: calc(54 / 40);
+  }
+  @media screen and (min-width: 1360px) {
+    margin-bottom: 31px;
+    /* line-height: calc(54 / 40); */
+  }
+`;
+
 export const Text = styled.p`
   font-size: 16px;
   line-height: calc(22 / 16);
@@ -88,8 +124,6 @@ export const Text = styled.p`
   text-align: ${p => (p.center ? 'center' : 'none')};
 
   margin-bottom: ${p => p.mb || '24px'};
-
-  /* color: #ffffff; */
 
   @media screen and (min-width: 768px) {
     font-size: 18px;
@@ -113,6 +147,9 @@ export const TeamText = styled(Text)`
 
   @media screen and (min-width: 768px) {
     margin-bottom: 24px;
+
+    font-size: 18px;
+    line-height: calc(25 / 18);
   }
   @media screen and (min-width: 1360px) {
     margin-bottom: 30px;

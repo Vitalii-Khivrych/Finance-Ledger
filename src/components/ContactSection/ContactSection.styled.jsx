@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const BlogSectionStyled = styled.section`
-  color: white;
-  background: #0284d0;
+export const ContactSectionStyled = styled.section`
+  color: #333333;
+  background: #f4f4f4;
 
   @media screen and (min-width: 1360px) {
     max-height: 460px;
@@ -11,13 +11,14 @@ export const BlogSectionStyled = styled.section`
 
 export const Wrapper = styled.div`
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: row-reverse;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
     height: 100%;
   }
 `;
 
-export const BlogImage = styled.picture`
+export const ContactImage = styled.picture`
   display: flex;
   min-height: 220px;
 
@@ -30,34 +31,38 @@ export const BlogImage = styled.picture`
   }
 
   @media screen and (min-width: 1360px) {
-    width: 50%;
-    max-height: 460px;
+    object-fit: cover;
+
+    max-height: 454px;
   }
 `;
 
-export const BlogContainer = styled.div`
-  max-width: 690px;
+export const FormContainer = styled.div`
   padding: 0 20px;
-  margin: 0 auto;
 
   @media screen and (min-width: 768px) {
     padding: 0 32px;
+    max-width: 690px;
   }
   @media screen and (min-width: 1360px) {
-    margin-right: 0;
-    padding-left: 28px;
-    padding-right: 20px;
+    margin-left: 0;
+    padding-left: 20px;
+    padding-right: 28px;
   }
 `;
 
-export const TextWrapper = styled.div`
-  padding-top: 48px;
-  padding-bottom: 58px;
+export const FormWrapper = styled.div`
+  padding-top: 51px;
+  padding-bottom: 25px;
 
   @media screen and (min-width: 768px) {
-    padding: 59px 0;
+    padding-top: 32px;
+    padding-bottom: 33px;
+
+    min-width: 336px;
   }
   @media screen and (min-width: 1360px) {
-    padding: 80px 0;
+    padding-top: 56px;
+    padding-bottom: 77px;
   }
 `;

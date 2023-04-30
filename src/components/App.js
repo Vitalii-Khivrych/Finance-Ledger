@@ -5,6 +5,7 @@ import {
   HeroSection,
   Layout,
   TeamSection,
+  ContactSection,
 } from 'components';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <CasesSection />
       <BlogsSection />
       <TeamSection />
+      <ContactSection />
     </Layout>
   );
 }

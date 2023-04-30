@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import { ButtonInverseStyled } from './ButtonInverseHover.styled';
 
-export const ButtonInverseHover = ({ children, width, blue }) => {
+export const ButtonInverseHover = ({ children, width, blue, post }) => {
   return (
-    <ButtonInverseStyled width={width} blue={blue}>
+    <ButtonInverseStyled width={width} blue={blue} post={post}>
       {children}
     </ButtonInverseStyled>
   );

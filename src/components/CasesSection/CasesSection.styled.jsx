@@ -15,7 +15,3 @@ export const CasesSectionStyled = styled.section`
     padding-bottom: 80px;
   }
 `;
-
-// export const GalleryWrapper = styled.ul`
-//   display: grid;
-// `;

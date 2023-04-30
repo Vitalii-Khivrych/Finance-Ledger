@@ -12,7 +12,7 @@ export const Button = ({ children, width, ml }) => {
 };
 
 Button.propTypes = {
-  children: PropTypes.array.isRequired,
+  children: PropTypes.oneOfType([PropTypes.array, PropTypes.string]).isRequired,
   width: PropTypes.string,
   ml: PropTypes.string,
 };

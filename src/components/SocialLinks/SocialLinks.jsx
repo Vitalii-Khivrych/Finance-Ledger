@@ -8,9 +8,9 @@ import {
   SocialLink,
 } from './SocialLinks.styled';
 
-export const SocialLinks = () => {
+export const SocialLinks = ({ visible }) => {
   return (
-    <SocialLinksList>
+    <SocialLinksList visible={visible}>
       {socialLinksItems.map(({ id, alt, href }) => (
         <SocialLinksItem key={id}>
           <SocialLink href={href} alt={alt}>

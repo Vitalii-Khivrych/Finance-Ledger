@@ -16,7 +16,7 @@ import heroImageWebpRetina from 'images/home/showcase@2x.webp';
 
 export const HeroSection = () => {
   return (
-    <HeroSectionStyled>
+    <HeroSectionStyled id="home">
       <Container>
         <BackgroundImage>
           <source

@@ -30,15 +30,15 @@ import case6Webp from 'images/cases/cases6.webp';
 import case6Retina from 'images/cases/cases6@2x.jpg';
 import case6WebpRetina from 'images/cases/cases6@2x.webp';
 
-import case7 from 'images/cases/cases7.jpg';
-import case7Webp from 'images/cases/cases7.webp';
-import case7Retina from 'images/cases/cases7@2x.jpg';
-import case7WebpRetina from 'images/cases/cases7@2x.webp';
+// import case7 from 'images/cases/cases7.jpg';
+// import case7Webp from 'images/cases/cases7.webp';
+// import case7Retina from 'images/cases/cases7@2x.jpg';
+// import case7WebpRetina from 'images/cases/cases7@2x.webp';
 
-import case8 from 'images/cases/cases8.jpg';
-import case8Webp from 'images/cases/cases8.webp';
-import case8Retina from 'images/cases/cases8@2x.jpg';
-import case8WebpRetina from 'images/cases/cases8@2x.webp';
+// import case8 from 'images/cases/cases8.jpg';
+// import case8Webp from 'images/cases/cases8.webp';
+// import case8Retina from 'images/cases/cases8@2x.jpg';
+// import case8WebpRetina from 'images/cases/cases8@2x.webp';
 
 export const casesGalleryItems = [
   {
@@ -89,20 +89,20 @@ export const casesGalleryItems = [
     srcWebpRetina: case6WebpRetina,
     alt: 'case 6',
   },
-  {
-    id: nanoid(),
-    src: case7,
-    srcWebp: case7Webp,
-    srcRetina: case7Retina,
-    srcWebpRetina: case7WebpRetina,
-    alt: 'case 7',
-  },
-  {
-    id: nanoid(),
-    src: case8,
-    srcWebp: case8Webp,
-    srcRetina: case8Retina,
-    srcWebpRetina: case8WebpRetina,
-    alt: 'case 8',
-  },
+  // {
+  //   id: nanoid(),
+  //   src: case7,
+  //   srcWebp: case7Webp,
+  //   srcRetina: case7Retina,
+  //   srcWebpRetina: case7WebpRetina,
+  //   alt: 'case 7',
+  // },
+  // {
+  //   id: nanoid(),
+  //   src: case8,
+  //   srcWebp: case8Webp,
+  //   srcRetina: case8Retina,
+  //   srcWebpRetina: case8WebpRetina,
+  //   alt: 'case 8',
+  // },
 ];
