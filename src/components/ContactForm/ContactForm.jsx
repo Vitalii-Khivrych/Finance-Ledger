@@ -19,11 +19,13 @@ export const ContactForm = () => {
 
   const onSubmit = e => {
     if (email.trim() === '') {
+      e.preventDefault();
       return setIsError(true);
     }
     setIsError(false);
 
-    // e.preventDefault();
+    setName('');
+    setEmail('');
   };
 
   return (
