@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -25,6 +26,7 @@ export const ContactForm = () => {
   } = useForm({
     resolver: yupResolver(schema),
   });
+  const navigate = useNavigate();
 
   const [notEmptyName, setNotEmptyName] = useState(false);
   const [notEmptyEmail, setNotEmptyEmail] = useState(false);
@@ -37,8 +39,21 @@ export const ContactForm = () => {
     email ? setNotEmptyEmail(true) : setNotEmptyEmail(false);
   }, [email, name]);
 
-  const onSubmit = d => {
-    console.log(d);
+  const onSubmit = (d, e) => {
+    e.preventDefault();
+
+    const myForm = e.target;
+    const formData = new FormData(myForm);
+
+    console.log('formData', formData.get('code'));
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => navigate('/thank-you/'))
+      .catch(error => alert(error));
 
     resetField('name');
     resetField('email');
@@ -46,23 +61,6 @@ export const ContactForm = () => {
     setName('');
     setEmail('');
   };
-
-  // const handleSubmit = event => {
-  //   event.preventDefault();
-
-  //   const myForm = event.target;
-  //   const formData = new FormData(myForm);
-
-  //   console.log('formData', formData.get('code'));
-
-  //   fetch('/', {
-  //     method: 'POST',
-  //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-  //     body: new URLSearchParams(formData).toString(),
-  //   })
-  //     .then(() => alert('/thank-you/'))
-  //     .catch(error => alert(error));
-  // };
 
   return (
     <Form
