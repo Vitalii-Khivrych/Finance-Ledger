@@ -4,7 +4,12 @@ export const ContactSectionStyled = styled.section`
   color: #333333;
   background: #f4f4f4;
 
+  @media screen and (min-width: 768px) {
+    padding-bottom: 40px;
+  }
+
   @media screen and (min-width: 1360px) {
+    padding-bottom: 0;
     max-height: 460px;
   }
 `;
