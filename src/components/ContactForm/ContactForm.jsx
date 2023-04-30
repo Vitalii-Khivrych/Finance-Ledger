@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -26,7 +25,6 @@ export const ContactForm = () => {
   } = useForm({
     resolver: yupResolver(schema),
   });
-  const navigate = useNavigate();
 
   const [notEmptyName, setNotEmptyName] = useState(false);
   const [notEmptyEmail, setNotEmptyEmail] = useState(false);
@@ -52,11 +50,11 @@ export const ContactForm = () => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => navigate('/thank-you/'))
+      .then(() => alert('/thank-you/'))
       .catch(error => alert(error));
 
-    resetField('name');
-    resetField('email');
+    // resetField('name');
+    // resetField('email');
 
     setName('');
     setEmail('');
@@ -67,6 +65,7 @@ export const ContactForm = () => {
       name="contact"
       method="post"
       data-netlify="true"
+      data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit(onSubmit)}
     >
       <input type="hidden" name="form-name" value="contact" />
@@ -94,12 +93,11 @@ export const ContactForm = () => {
         />
         <Label htmlFor="email">Enter email*</Label>
       </Wrapper>
-      <p> {errors.email && <WarningMessage />}</p>
-      <p>
-        <Button width="155px" ml="0px" type="submit">
-          Send
-        </Button>
-      </p>
+      {errors.email && <WarningMessage />}
+
+      <Button width="155px" ml="0px" type="submit">
+        Send
+      </Button>
     </Form>
   );
 };
