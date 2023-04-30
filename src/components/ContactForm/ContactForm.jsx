@@ -23,7 +23,7 @@ export const ContactForm = () => {
     }
     setIsError(false);
 
-    e.preventDefault();
+    // e.preventDefault();
   };
 
   return (
