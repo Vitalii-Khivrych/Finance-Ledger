@@ -72,7 +72,6 @@ export const ContactForm = () => {
       onSubmit={handleSubmit(onSubmit)}
     >
       <input type="hidden" name="form-name" value="contact" />
-
       <Wrapper>
         <Input
           type="text"
@@ -85,7 +84,6 @@ export const ContactForm = () => {
         />
         <Label htmlFor="name">Enter your name </Label>
       </Wrapper>
-
       <Wrapper>
         <Input
           type="email"
@@ -98,11 +96,12 @@ export const ContactForm = () => {
         />
         <Label htmlFor="email">Enter email*</Label>
       </Wrapper>
-      {errors.email && <WarningMessage />}
-
-      <Button width="155px" ml="0px" type="submit">
-        Send
-      </Button>
+      <p> {errors.email && <WarningMessage />}</p>
+      <p>
+        <Button width="155px" ml="0px" type="submit">
+          Send
+        </Button>
+      </p>
     </Form>
   );
 };
