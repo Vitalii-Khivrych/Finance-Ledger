@@ -21,7 +21,6 @@ export const ContactForm = () => {
     register,
     handleSubmit,
     formState: { errors },
-    resetField,
   } = useForm({
     resolver: yupResolver(schema),
   });
