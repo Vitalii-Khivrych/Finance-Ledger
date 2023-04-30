@@ -53,6 +53,7 @@ export const ContactForm = () => {
           type="email"
           id="email"
           name="email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
           empty={notEmptyEmail}
           value={email}
           onChange={evt => setEmail(evt.target.value)}

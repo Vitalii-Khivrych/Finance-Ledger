@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { SvgIcon } from 'components';
 import { socialLinksItems } from 'assets/data/social-links-items';
@@ -20,4 +21,8 @@ export const SocialLinks = ({ visible }) => {
       ))}
     </SocialLinksList>
   );
+};
+
+SocialLinks.propTypes = {
+  visible: PropTypes.bool,
 };

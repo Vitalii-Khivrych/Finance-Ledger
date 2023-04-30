@@ -21,6 +21,7 @@ export const Input = styled.input`
   }
 
   & ~ label {
+    pointer-events: none;
     transition-property: transform;
     transition-duration: 0.08s;
     transition-timing-function: linear;
@@ -32,6 +33,10 @@ export const Input = styled.input`
 
     & ~ label {
       transform: translateY(-38px);
+
+      @media screen and (min-width: 1360px) {
+        transform: translateY(-42px);
+      }
     }
   }
 
@@ -40,6 +45,10 @@ export const Input = styled.input`
       return css`
         & ~ label {
           transform: translateY(-38px);
+
+          @media screen and (min-width: 1360px) {
+            transform: translateY(-42px);
+          }
         }
       `;
     }
