@@ -48,19 +48,21 @@ export const PersonPosition = styled.p`
 export const Wrapper = styled.div`
   position: relative;
   background: #040404;
+  overflow: hidden;
 
   & svg {
     fill: white;
   }
-`;
 
-export const Thumb = styled.div`
   &:hover,
   &:focus {
+    & div div {
+    }
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+
     & img {
       opacity: 0.6;
       transform: scale(1.02);
-      filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
     }
 
     & ul {

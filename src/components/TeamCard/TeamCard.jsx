@@ -5,7 +5,6 @@ import {
   TeamItem,
   PersonName,
   PersonPosition,
-  Thumb,
   Wrapper,
 } from './TeamCard.styled';
 import { SocialLinks } from 'components';
@@ -16,22 +15,20 @@ export const TeamCard = ({ person }) => {
   return (
     <TeamItem key={id}>
       <Wrapper>
-        <Thumb>
-          <picture>
-            <source
-              srcSet={`${srcWebp} 1x,
+        <picture>
+          <source
+            srcSet={`${srcWebp} 1x,
               ${srcWebpRetina} 2x`}
-              type="image/webp"
-            />
-            <source
-              srcSet={`${src} 1x,
+            type="image/webp"
+          />
+          <source
+            srcSet={`${src} 1x,
               ${srcRetina} 2x`}
-              type="image/jpeg"
-            />
-            <img src={src} alt={position} loading="lazy" />
-          </picture>
-          <SocialLinks />
-        </Thumb>
+            type="image/jpeg"
+          />
+          <img src={src} alt={position} loading="lazy" />
+        </picture>
+        <SocialLinks />
       </Wrapper>
 
       <PersonName>{name}</PersonName>
