@@ -32,7 +32,7 @@ export const Header = () => {
   };
 
   return (
-    <HeaderStyled className={isFixedHeader ? 'fixed' : ''}>
+    <HeaderStyled id="header" className={isFixedHeader ? 'fixed' : ''}>
       <HeaderContainer>
         <Logo />
         <Navigation />

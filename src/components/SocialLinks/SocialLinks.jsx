@@ -14,7 +14,7 @@ export const SocialLinks = ({ visible }) => {
     <SocialLinksList visible={visible}>
       {socialLinksItems.map(({ id, alt, href }) => (
         <SocialLinksItem key={id}>
-          <SocialLink href={href} alt={alt}>
+          <SocialLink href={href} target="_blank" aria-label={alt}>
             <SvgIcon id={id} />
           </SocialLink>
         </SocialLinksItem>

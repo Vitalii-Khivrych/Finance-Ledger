@@ -6,7 +6,7 @@ import { Svg } from './SvgIcon.styled';
 
 export const SvgIcon = ({ id }) => {
   return (
-    <Svg className={id} alt={id}>
+    <Svg className={id} alt={id} width="20" height="20">
       <use href={`${sprite}#${id}`}></use>
     </Svg>
   );
