@@ -5,7 +5,7 @@ export const FooterStyled = styled.footer`
   margin: 0 auto;
 
   color: #ffffff;
-  background: #333333;
+  background: rgb(51, 51, 51);
 `;
 
 export const FooterText = styled.p`
